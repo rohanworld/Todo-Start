@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noting It</title>
+    <link rel="shortcut icon" href="iconidhu.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body  onload="clearText()">
+    <div class="container">
+        <form>
+            <div class="form-control">
+                <label for="title"></label>
+                <input type="text" id="text" placeholder="Today's Do??" autocomplete="off" name="title">
+            </div>
+            <button class="submit" id="addItBtn">+</button>
+        </form>
+    </div>
+    <div class="notes">
+    </div>
+    <script>
+         window.onload = function() {
+            document.getElementById("text").focus();
+        } 
+    </script>
+    <script src="logic.js"></script>
+</body>
+
+</html>
