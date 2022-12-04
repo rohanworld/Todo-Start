@@ -6,8 +6,7 @@ let notes=JSON.parse(localStorage.getItem("notes"));
 var input = document.getElementById("text");
 input.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
-    event.preventDefault();
-    addNotes();
+    addNotes();    
   }
 });
 if(notes){
