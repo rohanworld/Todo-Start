@@ -6,6 +6,7 @@ let notes=JSON.parse(localStorage.getItem("notes"));
 var input = document.getElementById("text");
 input.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
+    document.getElementById("text").value = "";
     addNotes();    
   }
 });
@@ -15,7 +16,7 @@ if(notes){
     });
 }
 submit.addEventListener("click", (e)=>{
-    
+    document.getElementById("text").value = "";
     addNotes()
 })
 function addNotes(obj) {
