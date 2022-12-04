@@ -15,7 +15,7 @@ if(notes){
     });
 }
 submit.addEventListener("click", (e)=>{
-    e.preventDefault();
+    
     addNotes()
 })
 function addNotes(obj) {
